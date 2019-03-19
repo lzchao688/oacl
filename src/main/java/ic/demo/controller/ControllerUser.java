@@ -15,6 +15,8 @@ public class ControllerUser {
     @RequestMapping("/t1")
      public String queryall(Model model){
         model.addAttribute("person", ac.queryAll());
+        System.out.println("65465");
+        System.out.println("这是阿超写的");
         return "/list.html";
 
     }
